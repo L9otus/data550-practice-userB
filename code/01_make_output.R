@@ -44,7 +44,7 @@ saveRDS(
 
 
 library(ggplot2)
-#library(cowplot)
+library(cowplot)
 data <- data.frame(x=c(1,2,3,4),y=c(1,2,3,4))
-ggplot(data,aes(x,y))+geom_smooth(method = lm)
+ggplot(data,aes(x,y))+geom_smooth(method = lm) + theme_cowplot(12)
 
