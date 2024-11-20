@@ -41,3 +41,10 @@ saveRDS(
   random_numbers5,
   file = here::here("output", "random_numbers5.rds")
 )
+
+
+library(ggplot2)
+#library(cowplot)
+data <- data.frame(x=c(1,2,3,4),y=c(1,2,3,4))
+ggplot(data,aes(x,y))+geom_smooth(method = lm)
+
